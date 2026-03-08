@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 GPU 중고 시장 시세 분석 보고서</title>
+    <style>
+        :root {
+            --nvidia-green: #76b900;
+            --dark-blue: #0b192e;
+            --light-gray: #f8f9fa;
+            --border-color: #e9ecef;
+            --text-main: #2d3436;
+        }
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #f1f3f5;
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.7;
+        }
+
+        .report-card {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--nvidia-green);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .badge {
+            background: var(--nvidia-green);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        h1 { font-size: 2.2rem; margin: 15px 0; color: var(--dark-blue); }
+        h2 { color: var(--dark-blue); border-left: 5px solid var(--nvidia-green); padding-left: 15px; margin-top: 40px; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th { background: var(--dark-blue); color: white; padding: 12px; font-weight: 500; }
+        td { padding: 15px; border-bottom: 1px solid var(--border-color); text-align: center; }
+        tr:nth-child(even) { background: #fafafa; }
+
+        .price-up { color: #d63031; font-weight: bold; }
+        .price-down { color: #0984e3; font-weight: bold; }
+
+        .info-box {
+            background: #fdfdfd;
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .chart-placeholder {
+            width: 100%;
+            background: #eee;
+            border-radius: 10px;
+            text-align: center;
+            padding: 40px 0;
+            margin: 20px 0;
+            font-style: italic;
+            color: #777;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #b2bec3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="report-card">
+    <header>
+        <span class="badge">Market Intelligence Report</span>
+        <h1>2026년 1분기 GPU 중고 시세 데이터 보고서</h1>
+        <p>기준 일자: 2026년 3월 9일 | 대상: NVIDIA RTX 20/30 Series</p>
+    </header>
+
+    <section>
+        <h2>1. 요약 (Executive Summary)</h2>
+        <p>최신 RTX 50 시리즈의 안정적인 공급으로 인해, 30 시리즈 하이엔드 모델의 중고가 방어선이 무너졌습니다. 현재 시장은 <strong>"3060 Ti 가성비 집중 현상"</strong>과 <strong>"20 시리즈의 사무용 전환"</strong>으로 요약됩니다.</p>
+    </section>
+
+    <section>
+        <h2>2. 시각화 데이터: 세대별 성능 지표</h2>
+        <p>각 세대별 대표 모델의 벤치마크 점수 및 전력 효율 비교입니다.</p>
+        
+        <div class="chart-placeholder">위 영역에 세대별 성능 격차를 나타내는 인포그래픽이 포함됩니다.</div>
+    </section>
+
+    <section>
+        <h2>3. 상세 시세 테이블</h2>
+        
+        <h3>RTX 30 Series (Ampere)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>모델</th>
+                    <th>중고 평균 시세</th>
+                    <th>전월 대비</th>
+                    <th>추천 용도</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>RTX 3080 Ti</td>
+                    <td>610,000원</td>
+                    <td class="price-down">▼ 4%</td>
+                    <td>4K 게이밍 / 작업</td>
+                </tr>
+                <tr>
+                    <td>RTX 3070</td>
+                    <td>360,000원</td>
+                    <td class="price-down">▼ 2%</td>
+                    <td>QHD 정복</td>
+                </tr>
+                <tr>
+                    <td>RTX 3060 Ti</td>
+                    <td>310,000원</td>
+                    <td class="price-up">▲ 1%</td>
+                    <td>최고의 가성비</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>RTX 20 Series (Turing)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>모델</th>
+                    <th>중고 평균 시세</th>
+                    <th>전월 대비</th>
+                    <th>추천 용도</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>RTX 2070 Super</td>
+                    <td>220,000원</td>
+                    <td>-</td>
+                    <td>FHD 고주사율</td>
+                </tr>
+                <tr>
+                    <td>RTX 2060</td>
+                    <td>130,000원</td>
+                    <td class="price-down">▼ 5%</td>
+                    <td>입문용 / 사무용</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="info-box">
+        <h3>💡 구매 가이드 및 결론</h3>
+        <ul>
+            <li><strong>AS 여부:</strong> RTX 30 시리즈 구매 시 시리얼 번호상 23년 이후 생산분을 권장합니다.</li>
+            <li><strong>파워 체크:</strong> 3080 급 이상은 최소 정격 800W 이상의 파워가 필요합니다.</li>
+            <li><strong>최종 추천:</strong> 예산 30만 원 초반대라면 <strong>RTX 3060 Ti</strong>가 가장 합리적인 선택입니다.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2026 Tech Market Analysis Team. 본 자료는 시장 데이터를 기반으로 작성되었습니다.</p>
+    </footer>
+</div>
+
+</body>
+</html>
+ 
